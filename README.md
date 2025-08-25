@@ -22,8 +22,8 @@ This project enables **quantitative evaluation of restaurant layouts** and provi
 * How geometry (open space vs corridor vs central hub) shapes efficiency.
 
 * # Clone repository
-git clone https://github.com/your-username/restaurant-simulation.git
-cd restaurant-simulation
+git clone https://github.com/your-username/Restaurant-Simulation---Spatial-Analysis.git
+cd Restaurant-Simulation---Spatial-Analysis
 
 # Create virtual environment (optional but recommended)
 python -m venv venv
