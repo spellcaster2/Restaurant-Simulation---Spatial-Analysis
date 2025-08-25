@@ -1,0 +1,742 @@
+wall_time,sim_min,actor,event,details
+2025-08-23T18:08:17,0.000,UI,place_entry,"(3.6, 1.0769230769230769)"
+2025-08-23T18:08:18,0.000,UI,place_entry,"(11.876923076923077, 2.123076923076923)"
+2025-08-23T18:08:19,0.000,UI,place_kitchen,"(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:21,0.000,UI,place_reception,"(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:22,0.000,UI,place_table,"id=1 group=window coords=(4.4, 9.692307692307692)"
+2025-08-23T18:08:22,0.000,UI,place_table,"id=2 group=window coords=(7.6, 12.615384615384615)"
+2025-08-23T18:08:23,0.000,UI,place_table,"id=3 group=window coords=(14.0, 9.723076923076922)"
+2025-08-23T18:08:41,0.000,SYS,tables_loaded,"window=[1, 2, 3] aisle=[]"
+2025-08-23T18:08:41,0.000,W0,online,"at_kitchen=17.14,1.82 speed=1.2mps"
+2025-08-23T18:08:41,0.000,SYS,waiters_ready,num=1
+2025-08-23T18:08:41,0.000,SYS,generator_start,group=window interval_min=8.0 tables_present=True
+2025-08-23T18:08:41,0.000,SYS,generator_start,group=aisle interval_min=15.0 tables_present=False
+2025-08-23T18:08:41,0.000,KPI,snapshot,served=0 active=0 backlog=0 avg_seated_wait=0.00 avg_backlog_wait=0.00
+2025-08-23T18:08:41,0.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:41,8.000,GEN,arrival_emit,id=CW1 group=window
+2025-08-23T18:08:41,8.000,CW1,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:41,8.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:41,8.000,CW1,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:41,8.000,CW1,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:41,8.038,CW1,at_reception,leg_time=0.038min
+2025-08-23T18:08:41,8.038,CW1,waiting_for_table,group=window
+2025-08-23T18:08:41,8.038,CW1,table_assigned,table=1 total_wait_until_seated=0.038min
+2025-08-23T18:08:41,8.038,CW1,walk_to_table_begin,"table=1 to=(3.0, 9.0)"
+2025-08-23T18:08:41,8.038,CW1,move_theta,"segments=2 path_len=13.119m dur=0.121min start=(14.923076923076923, 4.492307692307692) goal=(3.0, 9.0)"
+2025-08-23T18:08:41,8.160,CW1,seated,table=1 leg_time=0.122min
+2025-08-23T18:08:41,8.160,CW1,request_waiter,table=1
+2025-08-23T18:08:41,8.160,CW1,waiter_acquired,waiter=W0 table=1
+2025-08-23T18:08:41,8.160,W0,dispatch_to_table,"table=1 target_xy=(3.0, 9.0)"
+2025-08-23T18:08:41,8.160,0,move_theta,"segments=1 path_len=15.652m dur=0.217min start=(17.138461538461538, 1.8153846153846154) goal=(3.0, 9.0)"
+2025-08-23T18:08:41,8.378,W0,arrived_table,table=1 travel_time=0.217min
+2025-08-23T18:08:41,8.378,W0,service_start,table=1 svc_draw=2.040min
+2025-08-23T18:08:41,10.418,W0,service_end,table=1
+2025-08-23T18:08:41,10.418,W0,return_kitchen_begin,from_table=1
+2025-08-23T18:08:41,10.418,0,move_theta,"segments=3 path_len=15.912m dur=0.221min start=(3.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:41,10.639,W0,return_kitchen_end,from_table=1 travel_time=0.221min
+2025-08-23T18:08:41,10.639,W0,available,ready_for_next_task
+2025-08-23T18:08:41,10.639,CW1,dine_start,dwell_draw=0.760min
+2025-08-23T18:08:41,11.399,CW1,dine_end,table=1
+2025-08-23T18:08:41,11.399,CW1,leaving_table,table=1
+2025-08-23T18:08:41,11.399,CW1,table_released,table=1
+2025-08-23T18:08:41,11.399,KPI,snapshot,served=1 active=0 backlog=0 avg_seated_wait=0.04 avg_backlog_wait=0.00
+2025-08-23T18:08:41,11.499,CW1,despawn,
+2025-08-23T18:08:41,16.000,GEN,arrival_emit,id=CW2 group=window
+2025-08-23T18:08:41,16.000,CW2,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:41,16.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:41,16.000,CW2,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:41,16.000,CW2,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:41,16.038,CW2,at_reception,leg_time=0.038min
+2025-08-23T18:08:41,16.038,CW2,waiting_for_table,group=window
+2025-08-23T18:08:41,16.038,CW2,table_assigned,table=2 total_wait_until_seated=0.038min
+2025-08-23T18:08:41,16.038,CW2,walk_to_table_begin,"table=2 to=(7.0, 12.0)"
+2025-08-23T18:08:41,16.038,CW2,move_theta,"segments=1 path_len=11.314m dur=0.105min start=(14.923076923076923, 4.492307692307692) goal=(7.0, 12.0)"
+2025-08-23T18:08:41,16.143,CW2,seated,table=2 leg_time=0.105min
+2025-08-23T18:08:41,16.143,CW2,request_waiter,table=2
+2025-08-23T18:08:41,16.143,CW2,waiter_acquired,waiter=W0 table=2
+2025-08-23T18:08:41,16.143,W0,dispatch_to_table,"table=2 target_xy=(7.0, 12.0)"
+2025-08-23T18:08:41,16.143,0,move_theta,"segments=1 path_len=14.142m dur=0.196min start=(17.138461538461538, 1.8153846153846154) goal=(7.0, 12.0)"
+2025-08-23T18:08:41,16.340,W0,arrived_table,table=2 travel_time=0.197min
+2025-08-23T18:08:41,16.340,W0,service_start,table=2 svc_draw=0.643min
+2025-08-23T18:08:41,16.983,W0,service_end,table=2
+2025-08-23T18:08:41,16.983,W0,return_kitchen_begin,from_table=2
+2025-08-23T18:08:41,16.983,0,move_theta,"segments=2 path_len=14.373m dur=0.200min start=(7.0, 12.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:41,17.183,W0,return_kitchen_end,from_table=2 travel_time=0.200min
+2025-08-23T18:08:41,17.183,W0,available,ready_for_next_task
+2025-08-23T18:08:41,17.183,CW2,dine_start,dwell_draw=7.578min
+2025-08-23T18:08:41,24.000,GEN,arrival_emit,id=CW3 group=window
+2025-08-23T18:08:41,24.000,CW3,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:41,24.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:41,24.000,CW3,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:41,24.000,CW3,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:41,24.038,CW3,at_reception,leg_time=0.038min
+2025-08-23T18:08:41,24.038,CW3,waiting_for_table,group=window
+2025-08-23T18:08:41,24.038,CW3,table_assigned,table=3 total_wait_until_seated=0.038min
+2025-08-23T18:08:41,24.038,CW3,walk_to_table_begin,"table=3 to=(13.0, 9.0)"
+2025-08-23T18:08:41,24.038,CW3,move_theta,"segments=1 path_len=5.385m dur=0.050min start=(14.923076923076923, 4.492307692307692) goal=(13.0, 9.0)"
+2025-08-23T18:08:41,24.088,CW3,seated,table=3 leg_time=0.050min
+2025-08-23T18:08:41,24.088,CW3,request_waiter,table=3
+2025-08-23T18:08:41,24.088,CW3,waiter_acquired,waiter=W0 table=3
+2025-08-23T18:08:41,24.088,W0,dispatch_to_table,"table=3 target_xy=(13.0, 9.0)"
+2025-08-23T18:08:41,24.088,0,move_theta,"segments=1 path_len=8.062m dur=0.112min start=(17.138461538461538, 1.8153846153846154) goal=(13.0, 9.0)"
+2025-08-23T18:08:41,24.201,W0,arrived_table,table=3 travel_time=0.112min
+2025-08-23T18:08:41,24.201,W0,service_start,table=3 svc_draw=2.667min
+2025-08-23T18:08:41,24.761,CW2,dine_end,table=2
+2025-08-23T18:08:41,24.761,CW2,leaving_table,table=2
+2025-08-23T18:08:41,24.761,CW2,table_released,table=2
+2025-08-23T18:08:41,24.761,KPI,snapshot,served=2 active=1 backlog=0 avg_seated_wait=0.04 avg_backlog_wait=0.00
+2025-08-23T18:08:41,24.861,CW2,despawn,
+2025-08-23T18:08:41,26.868,W0,service_end,table=3
+2025-08-23T18:08:41,26.868,W0,return_kitchen_begin,from_table=3
+2025-08-23T18:08:41,26.868,0,move_theta,"segments=2 path_len=8.293m dur=0.115min start=(13.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:41,26.983,W0,return_kitchen_end,from_table=3 travel_time=0.116min
+2025-08-23T18:08:41,26.983,W0,available,ready_for_next_task
+2025-08-23T18:08:41,26.983,CW3,dine_start,dwell_draw=33.875min
+2025-08-23T18:08:42,32.000,GEN,arrival_emit,id=CW4 group=window
+2025-08-23T18:08:42,32.000,CW4,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:42,32.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:42,32.000,CW4,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:42,32.000,CW4,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:42,32.038,CW4,at_reception,leg_time=0.038min
+2025-08-23T18:08:42,32.038,CW4,waiting_for_table,group=window
+2025-08-23T18:08:42,32.038,CW4,table_assigned,table=1 total_wait_until_seated=0.038min
+2025-08-23T18:08:42,32.038,CW4,walk_to_table_begin,"table=1 to=(3.0, 9.0)"
+2025-08-23T18:08:42,32.038,CW4,move_theta,"segments=2 path_len=13.119m dur=0.121min start=(14.923076923076923, 4.492307692307692) goal=(3.0, 9.0)"
+2025-08-23T18:08:42,32.160,CW4,seated,table=1 leg_time=0.122min
+2025-08-23T18:08:42,32.160,CW4,request_waiter,table=1
+2025-08-23T18:08:42,32.160,CW4,waiter_acquired,waiter=W0 table=1
+2025-08-23T18:08:42,32.160,W0,dispatch_to_table,"table=1 target_xy=(3.0, 9.0)"
+2025-08-23T18:08:42,32.160,0,move_theta,"segments=1 path_len=15.652m dur=0.217min start=(17.138461538461538, 1.8153846153846154) goal=(3.0, 9.0)"
+2025-08-23T18:08:42,32.378,W0,arrived_table,table=1 travel_time=0.217min
+2025-08-23T18:08:42,32.378,W0,service_start,table=1 svc_draw=4.455min
+2025-08-23T18:08:42,36.832,W0,service_end,table=1
+2025-08-23T18:08:42,36.832,W0,return_kitchen_begin,from_table=1
+2025-08-23T18:08:42,36.832,0,move_theta,"segments=3 path_len=15.912m dur=0.221min start=(3.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:42,37.054,W0,return_kitchen_end,from_table=1 travel_time=0.221min
+2025-08-23T18:08:42,37.054,W0,available,ready_for_next_task
+2025-08-23T18:08:42,37.054,CW4,dine_start,dwell_draw=2.729min
+2025-08-23T18:08:42,39.782,CW4,dine_end,table=1
+2025-08-23T18:08:42,39.782,CW4,leaving_table,table=1
+2025-08-23T18:08:42,39.782,CW4,table_released,table=1
+2025-08-23T18:08:42,39.782,KPI,snapshot,served=3 active=1 backlog=0 avg_seated_wait=0.04 avg_backlog_wait=0.00
+2025-08-23T18:08:42,39.882,CW4,despawn,
+2025-08-23T18:08:42,40.000,GEN,arrival_emit,id=CW5 group=window
+2025-08-23T18:08:42,40.000,CW5,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:42,40.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:42,40.000,CW5,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:42,40.000,CW5,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:42,40.038,CW5,at_reception,leg_time=0.038min
+2025-08-23T18:08:42,40.038,CW5,waiting_for_table,group=window
+2025-08-23T18:08:42,40.038,CW5,table_assigned,table=2 total_wait_until_seated=0.038min
+2025-08-23T18:08:42,40.038,CW5,walk_to_table_begin,"table=2 to=(7.0, 12.0)"
+2025-08-23T18:08:42,40.038,CW5,move_theta,"segments=1 path_len=11.314m dur=0.105min start=(14.923076923076923, 4.492307692307692) goal=(7.0, 12.0)"
+2025-08-23T18:08:42,40.143,CW5,seated,table=2 leg_time=0.105min
+2025-08-23T18:08:42,40.143,CW5,request_waiter,table=2
+2025-08-23T18:08:42,40.143,CW5,waiter_acquired,waiter=W0 table=2
+2025-08-23T18:08:42,40.143,W0,dispatch_to_table,"table=2 target_xy=(7.0, 12.0)"
+2025-08-23T18:08:42,40.143,0,move_theta,"segments=1 path_len=14.142m dur=0.196min start=(17.138461538461538, 1.8153846153846154) goal=(7.0, 12.0)"
+2025-08-23T18:08:42,40.340,W0,arrived_table,table=2 travel_time=0.197min
+2025-08-23T18:08:42,40.340,W0,service_start,table=2 svc_draw=1.096min
+2025-08-23T18:08:42,41.436,W0,service_end,table=2
+2025-08-23T18:08:42,41.436,W0,return_kitchen_begin,from_table=2
+2025-08-23T18:08:42,41.436,0,move_theta,"segments=2 path_len=14.373m dur=0.200min start=(7.0, 12.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:42,41.636,W0,return_kitchen_end,from_table=2 travel_time=0.200min
+2025-08-23T18:08:42,41.636,W0,available,ready_for_next_task
+2025-08-23T18:08:42,41.636,CW5,dine_start,dwell_draw=0.908min
+2025-08-23T18:08:42,42.544,CW5,dine_end,table=2
+2025-08-23T18:08:42,42.544,CW5,leaving_table,table=2
+2025-08-23T18:08:42,42.544,CW5,table_released,table=2
+2025-08-23T18:08:42,42.544,KPI,snapshot,served=4 active=1 backlog=0 avg_seated_wait=0.04 avg_backlog_wait=0.00
+2025-08-23T18:08:42,42.644,CW5,despawn,
+2025-08-23T18:08:42,48.000,GEN,arrival_emit,id=CW6 group=window
+2025-08-23T18:08:42,48.000,CW6,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:42,48.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:42,48.000,CW6,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:42,48.000,CW6,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:42,48.038,CW6,at_reception,leg_time=0.038min
+2025-08-23T18:08:42,48.038,CW6,waiting_for_table,group=window
+2025-08-23T18:08:42,48.038,CW6,table_assigned,table=1 total_wait_until_seated=0.038min
+2025-08-23T18:08:42,48.038,CW6,walk_to_table_begin,"table=1 to=(3.0, 9.0)"
+2025-08-23T18:08:42,48.038,CW6,move_theta,"segments=2 path_len=13.119m dur=0.121min start=(14.923076923076923, 4.492307692307692) goal=(3.0, 9.0)"
+2025-08-23T18:08:42,48.160,CW6,seated,table=1 leg_time=0.122min
+2025-08-23T18:08:42,48.160,CW6,request_waiter,table=1
+2025-08-23T18:08:42,48.160,CW6,waiter_acquired,waiter=W0 table=1
+2025-08-23T18:08:42,48.160,W0,dispatch_to_table,"table=1 target_xy=(3.0, 9.0)"
+2025-08-23T18:08:42,48.160,0,move_theta,"segments=1 path_len=15.652m dur=0.217min start=(17.138461538461538, 1.8153846153846154) goal=(3.0, 9.0)"
+2025-08-23T18:08:42,48.378,W0,arrived_table,table=1 travel_time=0.217min
+2025-08-23T18:08:42,48.378,W0,service_start,table=1 svc_draw=0.493min
+2025-08-23T18:08:42,48.871,W0,service_end,table=1
+2025-08-23T18:08:42,48.871,W0,return_kitchen_begin,from_table=1
+2025-08-23T18:08:42,48.871,0,move_theta,"segments=3 path_len=15.912m dur=0.221min start=(3.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:42,49.093,W0,return_kitchen_end,from_table=1 travel_time=0.221min
+2025-08-23T18:08:42,49.093,W0,available,ready_for_next_task
+2025-08-23T18:08:42,49.093,CW6,dine_start,dwell_draw=21.117min
+2025-08-23T18:08:42,56.000,GEN,arrival_emit,id=CW7 group=window
+2025-08-23T18:08:42,56.000,CW7,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:42,56.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:42,56.000,CW7,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:42,56.000,CW7,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:42,56.038,CW7,at_reception,leg_time=0.038min
+2025-08-23T18:08:42,56.038,CW7,waiting_for_table,group=window
+2025-08-23T18:08:42,56.038,CW7,table_assigned,table=2 total_wait_until_seated=0.038min
+2025-08-23T18:08:42,56.038,CW7,walk_to_table_begin,"table=2 to=(7.0, 12.0)"
+2025-08-23T18:08:42,56.038,CW7,move_theta,"segments=1 path_len=11.314m dur=0.105min start=(14.923076923076923, 4.492307692307692) goal=(7.0, 12.0)"
+2025-08-23T18:08:42,56.143,CW7,seated,table=2 leg_time=0.105min
+2025-08-23T18:08:42,56.143,CW7,request_waiter,table=2
+2025-08-23T18:08:42,56.143,CW7,waiter_acquired,waiter=W0 table=2
+2025-08-23T18:08:42,56.143,W0,dispatch_to_table,"table=2 target_xy=(7.0, 12.0)"
+2025-08-23T18:08:42,56.143,0,move_theta,"segments=1 path_len=14.142m dur=0.196min start=(17.138461538461538, 1.8153846153846154) goal=(7.0, 12.0)"
+2025-08-23T18:08:42,56.340,W0,arrived_table,table=2 travel_time=0.197min
+2025-08-23T18:08:42,56.340,W0,service_start,table=2 svc_draw=0.054min
+2025-08-23T18:08:42,56.394,W0,service_end,table=2
+2025-08-23T18:08:42,56.394,W0,return_kitchen_begin,from_table=2
+2025-08-23T18:08:42,56.394,0,move_theta,"segments=2 path_len=14.373m dur=0.200min start=(7.0, 12.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:42,56.594,W0,return_kitchen_end,from_table=2 travel_time=0.200min
+2025-08-23T18:08:42,56.594,W0,available,ready_for_next_task
+2025-08-23T18:08:42,56.594,CW7,dine_start,dwell_draw=6.651min
+2025-08-23T18:08:42,60.858,CW3,dine_end,table=3
+2025-08-23T18:08:42,60.858,CW3,leaving_table,table=3
+2025-08-23T18:08:42,60.858,CW3,table_released,table=3
+2025-08-23T18:08:42,60.858,KPI,snapshot,served=5 active=2 backlog=0 avg_seated_wait=0.04 avg_backlog_wait=0.00
+2025-08-23T18:08:42,60.958,CW3,despawn,
+2025-08-23T18:08:42,63.245,CW7,dine_end,table=2
+2025-08-23T18:08:42,63.245,CW7,leaving_table,table=2
+2025-08-23T18:08:42,63.245,CW7,table_released,table=2
+2025-08-23T18:08:42,63.245,KPI,snapshot,served=6 active=1 backlog=0 avg_seated_wait=0.04 avg_backlog_wait=0.00
+2025-08-23T18:08:42,63.345,CW7,despawn,
+2025-08-23T18:08:42,64.000,GEN,arrival_emit,id=CW8 group=window
+2025-08-23T18:08:42,64.000,CW8,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:42,64.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:42,64.000,CW8,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:42,64.000,CW8,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:42,64.038,CW8,at_reception,leg_time=0.038min
+2025-08-23T18:08:42,64.038,CW8,waiting_for_table,group=window
+2025-08-23T18:08:42,64.038,CW8,table_assigned,table=3 total_wait_until_seated=0.038min
+2025-08-23T18:08:42,64.038,CW8,walk_to_table_begin,"table=3 to=(13.0, 9.0)"
+2025-08-23T18:08:42,64.038,CW8,move_theta,"segments=1 path_len=5.385m dur=0.050min start=(14.923076923076923, 4.492307692307692) goal=(13.0, 9.0)"
+2025-08-23T18:08:42,64.088,CW8,seated,table=3 leg_time=0.050min
+2025-08-23T18:08:42,64.088,CW8,request_waiter,table=3
+2025-08-23T18:08:42,64.088,CW8,waiter_acquired,waiter=W0 table=3
+2025-08-23T18:08:42,64.088,W0,dispatch_to_table,"table=3 target_xy=(13.0, 9.0)"
+2025-08-23T18:08:42,64.088,0,move_theta,"segments=1 path_len=8.062m dur=0.112min start=(17.138461538461538, 1.8153846153846154) goal=(13.0, 9.0)"
+2025-08-23T18:08:42,64.201,W0,arrived_table,table=3 travel_time=0.112min
+2025-08-23T18:08:42,64.201,W0,service_start,table=3 svc_draw=2.099min
+2025-08-23T18:08:42,66.300,W0,service_end,table=3
+2025-08-23T18:08:42,66.300,W0,return_kitchen_begin,from_table=3
+2025-08-23T18:08:42,66.300,0,move_theta,"segments=2 path_len=8.293m dur=0.115min start=(13.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:42,66.415,W0,return_kitchen_end,from_table=3 travel_time=0.116min
+2025-08-23T18:08:42,66.415,W0,available,ready_for_next_task
+2025-08-23T18:08:42,66.415,CW8,dine_start,dwell_draw=23.620min
+2025-08-23T18:08:42,70.210,CW6,dine_end,table=1
+2025-08-23T18:08:42,70.210,CW6,leaving_table,table=1
+2025-08-23T18:08:42,70.210,CW6,table_released,table=1
+2025-08-23T18:08:42,70.210,KPI,snapshot,served=7 active=1 backlog=0 avg_seated_wait=0.04 avg_backlog_wait=0.00
+2025-08-23T18:08:42,70.310,CW6,despawn,
+2025-08-23T18:08:42,72.000,GEN,arrival_emit,id=CW9 group=window
+2025-08-23T18:08:42,72.000,CW9,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:42,72.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:42,72.000,CW9,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:42,72.000,CW9,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:42,72.038,CW9,at_reception,leg_time=0.038min
+2025-08-23T18:08:42,72.038,CW9,waiting_for_table,group=window
+2025-08-23T18:08:42,72.038,CW9,table_assigned,table=2 total_wait_until_seated=0.038min
+2025-08-23T18:08:42,72.038,CW9,walk_to_table_begin,"table=2 to=(7.0, 12.0)"
+2025-08-23T18:08:42,72.038,CW9,move_theta,"segments=1 path_len=11.314m dur=0.105min start=(14.923076923076923, 4.492307692307692) goal=(7.0, 12.0)"
+2025-08-23T18:08:42,72.143,CW9,seated,table=2 leg_time=0.105min
+2025-08-23T18:08:42,72.143,CW9,request_waiter,table=2
+2025-08-23T18:08:42,72.143,CW9,waiter_acquired,waiter=W0 table=2
+2025-08-23T18:08:42,72.143,W0,dispatch_to_table,"table=2 target_xy=(7.0, 12.0)"
+2025-08-23T18:08:42,72.143,0,move_theta,"segments=1 path_len=14.142m dur=0.196min start=(17.138461538461538, 1.8153846153846154) goal=(7.0, 12.0)"
+2025-08-23T18:08:42,72.340,W0,arrived_table,table=2 travel_time=0.197min
+2025-08-23T18:08:42,72.340,W0,service_start,table=2 svc_draw=0.498min
+2025-08-23T18:08:42,72.838,W0,service_end,table=2
+2025-08-23T18:08:42,72.838,W0,return_kitchen_begin,from_table=2
+2025-08-23T18:08:42,72.838,0,move_theta,"segments=2 path_len=14.373m dur=0.200min start=(7.0, 12.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:42,73.038,W0,return_kitchen_end,from_table=2 travel_time=0.200min
+2025-08-23T18:08:42,73.038,W0,available,ready_for_next_task
+2025-08-23T18:08:42,73.038,CW9,dine_start,dwell_draw=26.694min
+2025-08-23T18:08:42,80.000,GEN,arrival_emit,id=CW10 group=window
+2025-08-23T18:08:42,80.000,CW10,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:42,80.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:42,80.000,CW10,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:42,80.000,CW10,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:42,80.038,CW10,at_reception,leg_time=0.038min
+2025-08-23T18:08:42,80.038,CW10,waiting_for_table,group=window
+2025-08-23T18:08:42,80.038,CW10,table_assigned,table=1 total_wait_until_seated=0.038min
+2025-08-23T18:08:42,80.038,CW10,walk_to_table_begin,"table=1 to=(3.0, 9.0)"
+2025-08-23T18:08:42,80.038,CW10,move_theta,"segments=2 path_len=13.119m dur=0.121min start=(14.923076923076923, 4.492307692307692) goal=(3.0, 9.0)"
+2025-08-23T18:08:42,80.160,CW10,seated,table=1 leg_time=0.122min
+2025-08-23T18:08:42,80.160,CW10,request_waiter,table=1
+2025-08-23T18:08:42,80.160,CW10,waiter_acquired,waiter=W0 table=1
+2025-08-23T18:08:42,80.160,W0,dispatch_to_table,"table=1 target_xy=(3.0, 9.0)"
+2025-08-23T18:08:42,80.160,0,move_theta,"segments=1 path_len=15.652m dur=0.217min start=(17.138461538461538, 1.8153846153846154) goal=(3.0, 9.0)"
+2025-08-23T18:08:42,80.378,W0,arrived_table,table=1 travel_time=0.218min
+2025-08-23T18:08:42,80.378,W0,service_start,table=1 svc_draw=3.315min
+2025-08-23T18:08:42,83.693,W0,service_end,table=1
+2025-08-23T18:08:42,83.693,W0,return_kitchen_begin,from_table=1
+2025-08-23T18:08:42,83.693,0,move_theta,"segments=3 path_len=15.912m dur=0.221min start=(3.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:42,83.915,W0,return_kitchen_end,from_table=1 travel_time=0.221min
+2025-08-23T18:08:42,83.915,W0,available,ready_for_next_task
+2025-08-23T18:08:42,83.915,CW10,dine_start,dwell_draw=0.196min
+2025-08-23T18:08:42,84.110,CW10,dine_end,table=1
+2025-08-23T18:08:42,84.110,CW10,leaving_table,table=1
+2025-08-23T18:08:42,84.110,CW10,table_released,table=1
+2025-08-23T18:08:42,84.110,KPI,snapshot,served=8 active=2 backlog=0 avg_seated_wait=0.04 avg_backlog_wait=0.00
+2025-08-23T18:08:42,84.210,CW10,despawn,
+2025-08-23T18:08:43,88.000,GEN,arrival_emit,id=CW11 group=window
+2025-08-23T18:08:43,88.000,CW11,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:43,88.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:43,88.000,CW11,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,88.000,CW11,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,88.038,CW11,at_reception,leg_time=0.038min
+2025-08-23T18:08:43,88.038,CW11,waiting_for_table,group=window
+2025-08-23T18:08:43,88.038,CW11,table_assigned,table=1 total_wait_until_seated=0.038min
+2025-08-23T18:08:43,88.038,CW11,walk_to_table_begin,"table=1 to=(3.0, 9.0)"
+2025-08-23T18:08:43,88.038,CW11,move_theta,"segments=2 path_len=13.119m dur=0.121min start=(14.923076923076923, 4.492307692307692) goal=(3.0, 9.0)"
+2025-08-23T18:08:43,88.160,CW11,seated,table=1 leg_time=0.122min
+2025-08-23T18:08:43,88.160,CW11,request_waiter,table=1
+2025-08-23T18:08:43,88.160,CW11,waiter_acquired,waiter=W0 table=1
+2025-08-23T18:08:43,88.160,W0,dispatch_to_table,"table=1 target_xy=(3.0, 9.0)"
+2025-08-23T18:08:43,88.160,0,move_theta,"segments=1 path_len=15.652m dur=0.217min start=(17.138461538461538, 1.8153846153846154) goal=(3.0, 9.0)"
+2025-08-23T18:08:43,88.378,W0,arrived_table,table=1 travel_time=0.218min
+2025-08-23T18:08:43,88.378,W0,service_start,table=1 svc_draw=3.278min
+2025-08-23T18:08:43,90.035,CW8,dine_end,table=3
+2025-08-23T18:08:43,90.035,CW8,leaving_table,table=3
+2025-08-23T18:08:43,90.035,CW8,table_released,table=3
+2025-08-23T18:08:43,90.035,KPI,snapshot,served=9 active=2 backlog=0 avg_seated_wait=0.04 avg_backlog_wait=0.00
+2025-08-23T18:08:43,90.135,CW8,despawn,
+2025-08-23T18:08:43,91.656,W0,service_end,table=1
+2025-08-23T18:08:43,91.656,W0,return_kitchen_begin,from_table=1
+2025-08-23T18:08:43,91.656,0,move_theta,"segments=3 path_len=15.912m dur=0.221min start=(3.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:43,91.877,W0,return_kitchen_end,from_table=1 travel_time=0.221min
+2025-08-23T18:08:43,91.877,W0,available,ready_for_next_task
+2025-08-23T18:08:43,91.877,CW11,dine_start,dwell_draw=35.934min
+2025-08-23T18:08:43,96.000,GEN,arrival_emit,id=CW12 group=window
+2025-08-23T18:08:43,96.000,CW12,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:43,96.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:43,96.000,CW12,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,96.000,CW12,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,96.038,CW12,at_reception,leg_time=0.038min
+2025-08-23T18:08:43,96.038,CW12,waiting_for_table,group=window
+2025-08-23T18:08:43,96.038,CW12,table_assigned,table=3 total_wait_until_seated=0.038min
+2025-08-23T18:08:43,96.038,CW12,walk_to_table_begin,"table=3 to=(13.0, 9.0)"
+2025-08-23T18:08:43,96.038,CW12,move_theta,"segments=1 path_len=5.385m dur=0.050min start=(14.923076923076923, 4.492307692307692) goal=(13.0, 9.0)"
+2025-08-23T18:08:43,96.088,CW12,seated,table=3 leg_time=0.050min
+2025-08-23T18:08:43,96.088,CW12,request_waiter,table=3
+2025-08-23T18:08:43,96.088,CW12,waiter_acquired,waiter=W0 table=3
+2025-08-23T18:08:43,96.088,W0,dispatch_to_table,"table=3 target_xy=(13.0, 9.0)"
+2025-08-23T18:08:43,96.088,0,move_theta,"segments=1 path_len=8.062m dur=0.112min start=(17.138461538461538, 1.8153846153846154) goal=(13.0, 9.0)"
+2025-08-23T18:08:43,96.201,W0,arrived_table,table=3 travel_time=0.112min
+2025-08-23T18:08:43,96.201,W0,service_start,table=3 svc_draw=0.832min
+2025-08-23T18:08:43,97.032,W0,service_end,table=3
+2025-08-23T18:08:43,97.032,W0,return_kitchen_begin,from_table=3
+2025-08-23T18:08:43,97.032,0,move_theta,"segments=2 path_len=8.293m dur=0.115min start=(13.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:43,97.148,W0,return_kitchen_end,from_table=3 travel_time=0.116min
+2025-08-23T18:08:43,97.148,W0,available,ready_for_next_task
+2025-08-23T18:08:43,97.148,CW12,dine_start,dwell_draw=5.070min
+2025-08-23T18:08:43,99.732,CW9,dine_end,table=2
+2025-08-23T18:08:43,99.732,CW9,leaving_table,table=2
+2025-08-23T18:08:43,99.732,CW9,table_released,table=2
+2025-08-23T18:08:43,99.732,KPI,snapshot,served=10 active=2 backlog=0 avg_seated_wait=0.04 avg_backlog_wait=0.00
+2025-08-23T18:08:43,99.832,CW9,despawn,
+2025-08-23T18:08:43,102.217,CW12,dine_end,table=3
+2025-08-23T18:08:43,102.217,CW12,leaving_table,table=3
+2025-08-23T18:08:43,102.217,CW12,table_released,table=3
+2025-08-23T18:08:43,102.217,KPI,snapshot,served=11 active=1 backlog=0 avg_seated_wait=0.04 avg_backlog_wait=0.00
+2025-08-23T18:08:43,102.317,CW12,despawn,
+2025-08-23T18:08:43,104.000,GEN,arrival_emit,id=CW13 group=window
+2025-08-23T18:08:43,104.000,CW13,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:43,104.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:43,104.000,CW13,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,104.000,CW13,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,104.038,CW13,at_reception,leg_time=0.038min
+2025-08-23T18:08:43,104.038,CW13,waiting_for_table,group=window
+2025-08-23T18:08:43,104.038,CW13,table_assigned,table=2 total_wait_until_seated=0.038min
+2025-08-23T18:08:43,104.038,CW13,walk_to_table_begin,"table=2 to=(7.0, 12.0)"
+2025-08-23T18:08:43,104.038,CW13,move_theta,"segments=1 path_len=11.314m dur=0.105min start=(14.923076923076923, 4.492307692307692) goal=(7.0, 12.0)"
+2025-08-23T18:08:43,104.143,CW13,seated,table=2 leg_time=0.105min
+2025-08-23T18:08:43,104.143,CW13,request_waiter,table=2
+2025-08-23T18:08:43,104.143,CW13,waiter_acquired,waiter=W0 table=2
+2025-08-23T18:08:43,104.143,W0,dispatch_to_table,"table=2 target_xy=(7.0, 12.0)"
+2025-08-23T18:08:43,104.143,0,move_theta,"segments=1 path_len=14.142m dur=0.196min start=(17.138461538461538, 1.8153846153846154) goal=(7.0, 12.0)"
+2025-08-23T18:08:43,104.340,W0,arrived_table,table=2 travel_time=0.197min
+2025-08-23T18:08:43,104.340,W0,service_start,table=2 svc_draw=6.303min
+2025-08-23T18:08:43,110.643,W0,service_end,table=2
+2025-08-23T18:08:43,110.643,W0,return_kitchen_begin,from_table=2
+2025-08-23T18:08:43,110.643,0,move_theta,"segments=2 path_len=14.373m dur=0.200min start=(7.0, 12.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:43,110.843,W0,return_kitchen_end,from_table=2 travel_time=0.200min
+2025-08-23T18:08:43,110.843,W0,available,ready_for_next_task
+2025-08-23T18:08:43,110.843,CW13,dine_start,dwell_draw=12.311min
+2025-08-23T18:08:43,112.000,GEN,arrival_emit,id=CW14 group=window
+2025-08-23T18:08:43,112.000,CW14,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:43,112.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:43,112.000,CW14,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,112.000,CW14,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,112.038,CW14,at_reception,leg_time=0.038min
+2025-08-23T18:08:43,112.038,CW14,waiting_for_table,group=window
+2025-08-23T18:08:43,112.038,CW14,table_assigned,table=3 total_wait_until_seated=0.038min
+2025-08-23T18:08:43,112.038,CW14,walk_to_table_begin,"table=3 to=(13.0, 9.0)"
+2025-08-23T18:08:43,112.038,CW14,move_theta,"segments=1 path_len=5.385m dur=0.050min start=(14.923076923076923, 4.492307692307692) goal=(13.0, 9.0)"
+2025-08-23T18:08:43,112.088,CW14,seated,table=3 leg_time=0.050min
+2025-08-23T18:08:43,112.088,CW14,request_waiter,table=3
+2025-08-23T18:08:43,112.088,CW14,waiter_acquired,waiter=W0 table=3
+2025-08-23T18:08:43,112.088,W0,dispatch_to_table,"table=3 target_xy=(13.0, 9.0)"
+2025-08-23T18:08:43,112.088,0,move_theta,"segments=1 path_len=8.062m dur=0.112min start=(17.138461538461538, 1.8153846153846154) goal=(13.0, 9.0)"
+2025-08-23T18:08:43,112.201,W0,arrived_table,table=3 travel_time=0.112min
+2025-08-23T18:08:43,112.201,W0,service_start,table=3 svc_draw=0.195min
+2025-08-23T18:08:43,112.395,W0,service_end,table=3
+2025-08-23T18:08:43,112.395,W0,return_kitchen_begin,from_table=3
+2025-08-23T18:08:43,112.395,0,move_theta,"segments=2 path_len=8.293m dur=0.115min start=(13.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:43,112.511,W0,return_kitchen_end,from_table=3 travel_time=0.116min
+2025-08-23T18:08:43,112.511,W0,available,ready_for_next_task
+2025-08-23T18:08:43,112.511,CW14,dine_start,dwell_draw=3.052min
+2025-08-23T18:08:43,115.562,CW14,dine_end,table=3
+2025-08-23T18:08:43,115.562,CW14,leaving_table,table=3
+2025-08-23T18:08:43,115.562,CW14,table_released,table=3
+2025-08-23T18:08:43,115.562,KPI,snapshot,served=12 active=2 backlog=0 avg_seated_wait=0.04 avg_backlog_wait=0.00
+2025-08-23T18:08:43,115.662,CW14,despawn,
+2025-08-23T18:08:43,120.000,GEN,arrival_emit,id=CW15 group=window
+2025-08-23T18:08:43,120.000,CW15,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:43,120.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:43,120.000,CW15,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,120.000,CW15,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,120.038,CW15,at_reception,leg_time=0.038min
+2025-08-23T18:08:43,120.038,CW15,waiting_for_table,group=window
+2025-08-23T18:08:43,120.038,CW15,table_assigned,table=3 total_wait_until_seated=0.038min
+2025-08-23T18:08:43,120.038,CW15,walk_to_table_begin,"table=3 to=(13.0, 9.0)"
+2025-08-23T18:08:43,120.038,CW15,move_theta,"segments=1 path_len=5.385m dur=0.050min start=(14.923076923076923, 4.492307692307692) goal=(13.0, 9.0)"
+2025-08-23T18:08:43,120.088,CW15,seated,table=3 leg_time=0.050min
+2025-08-23T18:08:43,120.088,CW15,request_waiter,table=3
+2025-08-23T18:08:43,120.088,CW15,waiter_acquired,waiter=W0 table=3
+2025-08-23T18:08:43,120.088,W0,dispatch_to_table,"table=3 target_xy=(13.0, 9.0)"
+2025-08-23T18:08:43,120.088,0,move_theta,"segments=1 path_len=8.062m dur=0.112min start=(17.138461538461538, 1.8153846153846154) goal=(13.0, 9.0)"
+2025-08-23T18:08:43,120.201,W0,arrived_table,table=3 travel_time=0.112min
+2025-08-23T18:08:43,120.201,W0,service_start,table=3 svc_draw=3.761min
+2025-08-23T18:08:43,123.154,CW13,dine_end,table=2
+2025-08-23T18:08:43,123.154,CW13,leaving_table,table=2
+2025-08-23T18:08:43,123.154,CW13,table_released,table=2
+2025-08-23T18:08:43,123.154,KPI,snapshot,served=13 active=2 backlog=0 avg_seated_wait=0.04 avg_backlog_wait=0.00
+2025-08-23T18:08:43,123.254,CW13,despawn,
+2025-08-23T18:08:43,123.962,W0,service_end,table=3
+2025-08-23T18:08:43,123.962,W0,return_kitchen_begin,from_table=3
+2025-08-23T18:08:43,123.962,0,move_theta,"segments=2 path_len=8.293m dur=0.115min start=(13.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:43,124.077,W0,return_kitchen_end,from_table=3 travel_time=0.116min
+2025-08-23T18:08:43,124.077,W0,available,ready_for_next_task
+2025-08-23T18:08:43,124.077,CW15,dine_start,dwell_draw=27.769min
+2025-08-23T18:08:43,127.811,CW11,dine_end,table=1
+2025-08-23T18:08:43,127.811,CW11,leaving_table,table=1
+2025-08-23T18:08:43,127.811,CW11,table_released,table=1
+2025-08-23T18:08:43,127.811,KPI,snapshot,served=14 active=1 backlog=0 avg_seated_wait=0.04 avg_backlog_wait=0.00
+2025-08-23T18:08:43,127.911,CW11,despawn,
+2025-08-23T18:08:43,128.000,GEN,arrival_emit,id=CW16 group=window
+2025-08-23T18:08:43,128.000,CW16,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:43,128.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:43,128.000,CW16,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,128.000,CW16,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,128.038,CW16,at_reception,leg_time=0.038min
+2025-08-23T18:08:43,128.038,CW16,waiting_for_table,group=window
+2025-08-23T18:08:43,128.038,CW16,table_assigned,table=2 total_wait_until_seated=0.038min
+2025-08-23T18:08:43,128.038,CW16,walk_to_table_begin,"table=2 to=(7.0, 12.0)"
+2025-08-23T18:08:43,128.038,CW16,move_theta,"segments=1 path_len=11.314m dur=0.105min start=(14.923076923076923, 4.492307692307692) goal=(7.0, 12.0)"
+2025-08-23T18:08:43,128.143,CW16,seated,table=2 leg_time=0.105min
+2025-08-23T18:08:43,128.143,CW16,request_waiter,table=2
+2025-08-23T18:08:43,128.143,CW16,waiter_acquired,waiter=W0 table=2
+2025-08-23T18:08:43,128.143,W0,dispatch_to_table,"table=2 target_xy=(7.0, 12.0)"
+2025-08-23T18:08:43,128.143,0,move_theta,"segments=1 path_len=14.142m dur=0.196min start=(17.138461538461538, 1.8153846153846154) goal=(7.0, 12.0)"
+2025-08-23T18:08:43,128.340,W0,arrived_table,table=2 travel_time=0.197min
+2025-08-23T18:08:43,128.340,W0,service_start,table=2 svc_draw=3.291min
+2025-08-23T18:08:43,131.631,W0,service_end,table=2
+2025-08-23T18:08:43,131.631,W0,return_kitchen_begin,from_table=2
+2025-08-23T18:08:43,131.631,0,move_theta,"segments=2 path_len=14.373m dur=0.200min start=(7.0, 12.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:43,131.831,W0,return_kitchen_end,from_table=2 travel_time=0.200min
+2025-08-23T18:08:43,131.831,W0,available,ready_for_next_task
+2025-08-23T18:08:43,131.831,CW16,dine_start,dwell_draw=39.250min
+2025-08-23T18:08:43,136.000,GEN,arrival_emit,id=CW17 group=window
+2025-08-23T18:08:43,136.000,CW17,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:43,136.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:43,136.000,CW17,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,136.000,CW17,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,136.038,CW17,at_reception,leg_time=0.038min
+2025-08-23T18:08:43,136.038,CW17,waiting_for_table,group=window
+2025-08-23T18:08:43,136.038,CW17,table_assigned,table=1 total_wait_until_seated=0.038min
+2025-08-23T18:08:43,136.038,CW17,walk_to_table_begin,"table=1 to=(3.0, 9.0)"
+2025-08-23T18:08:43,136.038,CW17,move_theta,"segments=2 path_len=13.119m dur=0.121min start=(14.923076923076923, 4.492307692307692) goal=(3.0, 9.0)"
+2025-08-23T18:08:43,136.160,CW17,seated,table=1 leg_time=0.122min
+2025-08-23T18:08:43,136.160,CW17,request_waiter,table=1
+2025-08-23T18:08:43,136.160,CW17,waiter_acquired,waiter=W0 table=1
+2025-08-23T18:08:43,136.160,W0,dispatch_to_table,"table=1 target_xy=(3.0, 9.0)"
+2025-08-23T18:08:43,136.160,0,move_theta,"segments=1 path_len=15.652m dur=0.217min start=(17.138461538461538, 1.8153846153846154) goal=(3.0, 9.0)"
+2025-08-23T18:08:43,136.378,W0,arrived_table,table=1 travel_time=0.217min
+2025-08-23T18:08:43,136.378,W0,service_start,table=1 svc_draw=1.537min
+2025-08-23T18:08:43,137.915,W0,service_end,table=1
+2025-08-23T18:08:43,137.915,W0,return_kitchen_begin,from_table=1
+2025-08-23T18:08:43,137.915,0,move_theta,"segments=3 path_len=15.912m dur=0.221min start=(3.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:43,138.136,W0,return_kitchen_end,from_table=1 travel_time=0.221min
+2025-08-23T18:08:43,138.136,W0,available,ready_for_next_task
+2025-08-23T18:08:43,138.136,CW17,dine_start,dwell_draw=108.486min
+2025-08-23T18:08:43,144.000,GEN,arrival_emit,id=CW18 group=window
+2025-08-23T18:08:43,144.000,CW18,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:43,144.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:43,144.000,CW18,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,144.000,CW18,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:43,144.038,CW18,at_reception,leg_time=0.038min
+2025-08-23T18:08:43,144.038,CW18,waiting_for_table,group=window
+2025-08-23T18:08:44,151.847,CW15,dine_end,table=3
+2025-08-23T18:08:44,151.847,CW15,leaving_table,table=3
+2025-08-23T18:08:44,151.847,CW15,table_released,table=3
+2025-08-23T18:08:44,151.847,KPI,snapshot,served=15 active=2 backlog=1 avg_seated_wait=0.04 avg_backlog_wait=7.85
+2025-08-23T18:08:44,151.847,CW18,table_assigned,table=3 total_wait_until_seated=7.847min
+2025-08-23T18:08:44,151.847,CW18,walk_to_table_begin,"table=3 to=(13.0, 9.0)"
+2025-08-23T18:08:44,151.847,CW18,move_theta,"segments=1 path_len=6.403m dur=0.059min start=(16.923076923076923, 4.492307692307692) goal=(13.0, 9.0)"
+2025-08-23T18:08:44,151.906,CW18,seated,table=3 leg_time=0.059min
+2025-08-23T18:08:44,151.906,CW18,request_waiter,table=3
+2025-08-23T18:08:44,151.906,CW18,waiter_acquired,waiter=W0 table=3
+2025-08-23T18:08:44,151.906,W0,dispatch_to_table,"table=3 target_xy=(13.0, 9.0)"
+2025-08-23T18:08:44,151.906,0,move_theta,"segments=1 path_len=8.062m dur=0.112min start=(17.138461538461538, 1.8153846153846154) goal=(13.0, 9.0)"
+2025-08-23T18:08:44,151.947,CW15,despawn,
+2025-08-23T18:08:44,152.000,GEN,arrival_emit,id=CW19 group=window
+2025-08-23T18:08:44,152.000,CW19,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:44,152.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:44,152.000,CW19,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:44,152.000,CW19,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:44,152.018,W0,arrived_table,table=3 travel_time=0.112min
+2025-08-23T18:08:44,152.018,W0,service_start,table=3 svc_draw=0.951min
+2025-08-23T18:08:44,152.038,CW19,at_reception,leg_time=0.038min
+2025-08-23T18:08:44,152.038,CW19,waiting_for_table,group=window
+2025-08-23T18:08:44,152.970,W0,service_end,table=3
+2025-08-23T18:08:44,152.970,W0,return_kitchen_begin,from_table=3
+2025-08-23T18:08:44,152.970,0,move_theta,"segments=2 path_len=8.293m dur=0.115min start=(13.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:44,153.085,W0,return_kitchen_end,from_table=3 travel_time=0.116min
+2025-08-23T18:08:44,153.085,W0,available,ready_for_next_task
+2025-08-23T18:08:44,153.085,CW18,dine_start,dwell_draw=24.092min
+2025-08-23T18:08:44,160.000,GEN,arrival_emit,id=CW20 group=window
+2025-08-23T18:08:44,160.000,CW20,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:44,160.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:44,160.000,CW20,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:44,160.000,CW20,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:44,160.038,CW20,at_reception,leg_time=0.038min
+2025-08-23T18:08:44,160.038,CW20,waiting_for_table,group=window
+2025-08-23T18:08:44,168.000,GEN,arrival_emit,id=CW21 group=window
+2025-08-23T18:08:44,168.000,CW21,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:44,168.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:44,168.000,CW21,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:44,168.000,CW21,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:44,168.038,CW21,at_reception,leg_time=0.038min
+2025-08-23T18:08:44,168.038,CW21,waiting_for_table,group=window
+2025-08-23T18:08:44,171.082,CW16,dine_end,table=2
+2025-08-23T18:08:44,171.082,CW16,leaving_table,table=2
+2025-08-23T18:08:44,171.082,CW16,table_released,table=2
+2025-08-23T18:08:44,171.082,KPI,snapshot,served=16 active=2 backlog=3 avg_seated_wait=0.47 avg_backlog_wait=11.08
+2025-08-23T18:08:44,171.082,CW19,table_assigned,table=2 total_wait_until_seated=19.082min
+2025-08-23T18:08:44,171.082,CW19,walk_to_table_begin,"table=2 to=(7.0, 12.0)"
+2025-08-23T18:08:44,171.082,CW19,move_theta,"segments=1 path_len=12.806m dur=0.119min start=(16.923076923076923, 4.492307692307692) goal=(7.0, 12.0)"
+2025-08-23T18:08:44,171.182,CW16,despawn,
+2025-08-23T18:08:44,171.200,CW19,seated,table=2 leg_time=0.119min
+2025-08-23T18:08:44,171.200,CW19,request_waiter,table=2
+2025-08-23T18:08:44,171.200,CW19,waiter_acquired,waiter=W0 table=2
+2025-08-23T18:08:44,171.200,W0,dispatch_to_table,"table=2 target_xy=(7.0, 12.0)"
+2025-08-23T18:08:44,171.200,0,move_theta,"segments=1 path_len=14.142m dur=0.196min start=(17.138461538461538, 1.8153846153846154) goal=(7.0, 12.0)"
+2025-08-23T18:08:44,171.397,W0,arrived_table,table=2 travel_time=0.197min
+2025-08-23T18:08:44,171.397,W0,service_start,table=2 svc_draw=3.537min
+2025-08-23T18:08:44,174.934,W0,service_end,table=2
+2025-08-23T18:08:44,174.934,W0,return_kitchen_begin,from_table=2
+2025-08-23T18:08:44,174.934,0,move_theta,"segments=2 path_len=14.373m dur=0.200min start=(7.0, 12.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:44,175.134,W0,return_kitchen_end,from_table=2 travel_time=0.200min
+2025-08-23T18:08:44,175.134,W0,available,ready_for_next_task
+2025-08-23T18:08:44,175.134,CW19,dine_start,dwell_draw=28.911min
+2025-08-23T18:08:44,176.000,GEN,arrival_emit,id=CW22 group=window
+2025-08-23T18:08:44,176.000,CW22,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:44,176.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:44,176.000,CW22,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:44,176.000,CW22,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:44,176.038,CW22,at_reception,leg_time=0.038min
+2025-08-23T18:08:44,176.038,CW22,waiting_for_table,group=window
+2025-08-23T18:08:44,177.177,CW18,dine_end,table=3
+2025-08-23T18:08:44,177.177,CW18,leaving_table,table=3
+2025-08-23T18:08:44,177.177,CW18,table_released,table=3
+2025-08-23T18:08:44,177.177,KPI,snapshot,served=17 active=2 backlog=3 avg_seated_wait=1.45 avg_backlog_wait=9.18
+2025-08-23T18:08:44,177.177,CW20,table_assigned,table=3 total_wait_until_seated=17.177min
+2025-08-23T18:08:44,177.177,CW20,walk_to_table_begin,"table=3 to=(13.0, 9.0)"
+2025-08-23T18:08:44,177.177,CW20,move_theta,"segments=1 path_len=6.403m dur=0.059min start=(16.923076923076923, 4.492307692307692) goal=(13.0, 9.0)"
+2025-08-23T18:08:44,177.236,CW20,seated,table=3 leg_time=0.059min
+2025-08-23T18:08:44,177.236,CW20,request_waiter,table=3
+2025-08-23T18:08:44,177.236,CW20,waiter_acquired,waiter=W0 table=3
+2025-08-23T18:08:44,177.236,W0,dispatch_to_table,"table=3 target_xy=(13.0, 9.0)"
+2025-08-23T18:08:44,177.236,0,move_theta,"segments=1 path_len=8.062m dur=0.112min start=(17.138461538461538, 1.8153846153846154) goal=(13.0, 9.0)"
+2025-08-23T18:08:44,177.277,CW18,despawn,
+2025-08-23T18:08:44,177.349,W0,arrived_table,table=3 travel_time=0.112min
+2025-08-23T18:08:44,177.349,W0,service_start,table=3 svc_draw=3.957min
+2025-08-23T18:08:44,181.305,W0,service_end,table=3
+2025-08-23T18:08:44,181.305,W0,return_kitchen_begin,from_table=3
+2025-08-23T18:08:44,181.305,0,move_theta,"segments=2 path_len=8.293m dur=0.115min start=(13.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:44,181.421,W0,return_kitchen_end,from_table=3 travel_time=0.116min
+2025-08-23T18:08:44,181.421,W0,available,ready_for_next_task
+2025-08-23T18:08:44,181.421,CW20,dine_start,dwell_draw=25.836min
+2025-08-23T18:08:44,184.000,GEN,arrival_emit,id=CW23 group=window
+2025-08-23T18:08:44,184.000,CW23,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:44,184.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:44,184.000,CW23,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:44,184.000,CW23,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:44,184.038,CW23,at_reception,leg_time=0.038min
+2025-08-23T18:08:44,184.038,CW23,waiting_for_table,group=window
+2025-08-23T18:08:44,192.000,GEN,arrival_emit,id=CW24 group=window
+2025-08-23T18:08:44,192.000,CW24,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:44,192.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:44,192.000,CW24,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:44,192.000,CW24,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:44,192.038,CW24,at_reception,leg_time=0.038min
+2025-08-23T18:08:44,192.038,CW24,waiting_for_table,group=window
+2025-08-23T18:08:44,200.000,GEN,arrival_emit,id=CW25 group=window
+2025-08-23T18:08:44,200.000,CW25,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:44,200.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:44,200.000,CW25,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:44,200.000,CW25,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:44,200.038,CW25,at_reception,leg_time=0.038min
+2025-08-23T18:08:44,200.038,CW25,waiting_for_table,group=window
+2025-08-23T18:08:45,204.045,CW19,dine_end,table=2
+2025-08-23T18:08:45,204.045,CW19,leaving_table,table=2
+2025-08-23T18:08:45,204.045,CW19,table_released,table=2
+2025-08-23T18:08:45,204.045,KPI,snapshot,served=18 active=2 backlog=5 avg_seated_wait=2.24 avg_backlog_wait=20.04
+2025-08-23T18:08:45,204.045,CW21,table_assigned,table=2 total_wait_until_seated=36.045min
+2025-08-23T18:08:45,204.045,CW21,walk_to_table_begin,"table=2 to=(7.0, 12.0)"
+2025-08-23T18:08:45,204.045,CW21,move_theta,"segments=1 path_len=12.806m dur=0.119min start=(16.923076923076923, 4.492307692307692) goal=(7.0, 12.0)"
+2025-08-23T18:08:45,204.145,CW19,despawn,
+2025-08-23T18:08:45,204.163,CW21,seated,table=2 leg_time=0.119min
+2025-08-23T18:08:45,204.163,CW21,request_waiter,table=2
+2025-08-23T18:08:45,204.163,CW21,waiter_acquired,waiter=W0 table=2
+2025-08-23T18:08:45,204.163,W0,dispatch_to_table,"table=2 target_xy=(7.0, 12.0)"
+2025-08-23T18:08:45,204.163,0,move_theta,"segments=1 path_len=14.142m dur=0.196min start=(17.138461538461538, 1.8153846153846154) goal=(7.0, 12.0)"
+2025-08-23T18:08:45,204.360,W0,arrived_table,table=2 travel_time=0.197min
+2025-08-23T18:08:45,204.360,W0,service_start,table=2 svc_draw=2.439min
+2025-08-23T18:08:45,206.799,W0,service_end,table=2
+2025-08-23T18:08:45,206.799,W0,return_kitchen_begin,from_table=2
+2025-08-23T18:08:45,206.799,0,move_theta,"segments=2 path_len=14.373m dur=0.200min start=(7.0, 12.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:45,206.999,W0,return_kitchen_end,from_table=2 travel_time=0.200min
+2025-08-23T18:08:45,206.999,W0,available,ready_for_next_task
+2025-08-23T18:08:45,206.999,CW21,dine_start,dwell_draw=1.407min
+2025-08-23T18:08:45,207.257,CW20,dine_end,table=3
+2025-08-23T18:08:45,207.257,CW20,leaving_table,table=3
+2025-08-23T18:08:45,207.257,CW20,table_released,table=3
+2025-08-23T18:08:45,207.257,KPI,snapshot,served=19 active=2 backlog=4 avg_seated_wait=3.85 avg_backlog_wait=19.26
+2025-08-23T18:08:45,207.257,CW22,table_assigned,table=3 total_wait_until_seated=31.257min
+2025-08-23T18:08:45,207.257,CW22,walk_to_table_begin,"table=3 to=(13.0, 9.0)"
+2025-08-23T18:08:45,207.257,CW22,move_theta,"segments=1 path_len=6.403m dur=0.059min start=(16.923076923076923, 4.492307692307692) goal=(13.0, 9.0)"
+2025-08-23T18:08:45,207.317,CW22,seated,table=3 leg_time=0.059min
+2025-08-23T18:08:45,207.317,CW22,request_waiter,table=3
+2025-08-23T18:08:45,207.317,CW22,waiter_acquired,waiter=W0 table=3
+2025-08-23T18:08:45,207.317,W0,dispatch_to_table,"table=3 target_xy=(13.0, 9.0)"
+2025-08-23T18:08:45,207.317,0,move_theta,"segments=1 path_len=8.062m dur=0.112min start=(17.138461538461538, 1.8153846153846154) goal=(13.0, 9.0)"
+2025-08-23T18:08:45,207.357,CW20,despawn,
+2025-08-23T18:08:45,207.429,W0,arrived_table,table=3 travel_time=0.112min
+2025-08-23T18:08:45,207.429,W0,service_start,table=3 svc_draw=0.517min
+2025-08-23T18:08:45,207.946,W0,service_end,table=3
+2025-08-23T18:08:45,207.946,W0,return_kitchen_begin,from_table=3
+2025-08-23T18:08:45,207.946,0,move_theta,"segments=2 path_len=8.293m dur=0.115min start=(13.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:45,208.000,GEN,arrival_emit,id=CW26 group=window
+2025-08-23T18:08:45,208.000,CW26,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:45,208.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:45,208.000,CW26,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:45,208.000,CW26,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:45,208.038,CW26,at_reception,leg_time=0.038min
+2025-08-23T18:08:45,208.038,CW26,waiting_for_table,group=window
+2025-08-23T18:08:45,208.062,W0,return_kitchen_end,from_table=3 travel_time=0.116min
+2025-08-23T18:08:45,208.062,W0,available,ready_for_next_task
+2025-08-23T18:08:45,208.062,CW22,dine_start,dwell_draw=10.249min
+2025-08-23T18:08:45,208.406,CW21,dine_end,table=2
+2025-08-23T18:08:45,208.406,CW21,leaving_table,table=2
+2025-08-23T18:08:45,208.406,CW21,table_released,table=2
+2025-08-23T18:08:45,208.406,KPI,snapshot,served=20 active=2 backlog=4 avg_seated_wait=5.09 avg_backlog_wait=12.41
+2025-08-23T18:08:45,208.406,CW23,table_assigned,table=2 total_wait_until_seated=24.406min
+2025-08-23T18:08:45,208.406,CW23,walk_to_table_begin,"table=2 to=(7.0, 12.0)"
+2025-08-23T18:08:45,208.406,CW23,move_theta,"segments=1 path_len=12.806m dur=0.119min start=(16.923076923076923, 4.492307692307692) goal=(7.0, 12.0)"
+2025-08-23T18:08:45,208.506,CW21,despawn,
+2025-08-23T18:08:45,208.525,CW23,seated,table=2 leg_time=0.119min
+2025-08-23T18:08:45,208.525,CW23,request_waiter,table=2
+2025-08-23T18:08:45,208.525,CW23,waiter_acquired,waiter=W0 table=2
+2025-08-23T18:08:45,208.525,W0,dispatch_to_table,"table=2 target_xy=(7.0, 12.0)"
+2025-08-23T18:08:45,208.525,0,move_theta,"segments=1 path_len=14.142m dur=0.196min start=(17.138461538461538, 1.8153846153846154) goal=(7.0, 12.0)"
+2025-08-23T18:08:45,208.721,W0,arrived_table,table=2 travel_time=0.197min
+2025-08-23T18:08:45,208.721,W0,service_start,table=2 svc_draw=0.166min
+2025-08-23T18:08:45,208.888,W0,service_end,table=2
+2025-08-23T18:08:45,208.888,W0,return_kitchen_begin,from_table=2
+2025-08-23T18:08:45,208.888,0,move_theta,"segments=2 path_len=14.373m dur=0.200min start=(7.0, 12.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:45,209.088,W0,return_kitchen_end,from_table=2 travel_time=0.200min
+2025-08-23T18:08:45,209.088,W0,available,ready_for_next_task
+2025-08-23T18:08:45,209.088,CW23,dine_start,dwell_draw=7.950min
+2025-08-23T18:08:45,216.000,GEN,arrival_emit,id=CW27 group=window
+2025-08-23T18:08:45,216.000,CW27,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:45,216.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:45,216.000,CW27,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:45,216.000,CW27,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:45,216.038,CW27,at_reception,leg_time=0.038min
+2025-08-23T18:08:45,216.038,CW27,waiting_for_table,group=window
+2025-08-23T18:08:45,217.037,CW23,dine_end,table=2
+2025-08-23T18:08:45,217.037,CW23,leaving_table,table=2
+2025-08-23T18:08:45,217.037,CW23,table_released,table=2
+2025-08-23T18:08:45,217.037,KPI,snapshot,served=21 active=2 backlog=4 avg_seated_wait=5.93 avg_backlog_wait=13.04
+2025-08-23T18:08:45,217.037,CW24,table_assigned,table=2 total_wait_until_seated=25.037min
+2025-08-23T18:08:45,217.037,CW24,walk_to_table_begin,"table=2 to=(7.0, 12.0)"
+2025-08-23T18:08:45,217.037,CW24,move_theta,"segments=1 path_len=12.806m dur=0.119min start=(16.923076923076923, 4.492307692307692) goal=(7.0, 12.0)"
+2025-08-23T18:08:45,217.137,CW23,despawn,
+2025-08-23T18:08:45,217.156,CW24,seated,table=2 leg_time=0.119min
+2025-08-23T18:08:45,217.156,CW24,request_waiter,table=2
+2025-08-23T18:08:45,217.156,CW24,waiter_acquired,waiter=W0 table=2
+2025-08-23T18:08:45,217.156,W0,dispatch_to_table,"table=2 target_xy=(7.0, 12.0)"
+2025-08-23T18:08:45,217.156,0,move_theta,"segments=1 path_len=14.142m dur=0.196min start=(17.138461538461538, 1.8153846153846154) goal=(7.0, 12.0)"
+2025-08-23T18:08:45,217.353,W0,arrived_table,table=2 travel_time=0.197min
+2025-08-23T18:08:45,217.353,W0,service_start,table=2 svc_draw=0.213min
+2025-08-23T18:08:45,217.566,W0,service_end,table=2
+2025-08-23T18:08:45,217.566,W0,return_kitchen_begin,from_table=2
+2025-08-23T18:08:45,217.566,0,move_theta,"segments=2 path_len=14.373m dur=0.200min start=(7.0, 12.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:45,217.766,W0,return_kitchen_end,from_table=2 travel_time=0.200min
+2025-08-23T18:08:45,217.766,W0,available,ready_for_next_task
+2025-08-23T18:08:45,217.766,CW24,dine_start,dwell_draw=9.771min
+2025-08-23T18:08:45,218.311,CW22,dine_end,table=3
+2025-08-23T18:08:45,218.311,CW22,leaving_table,table=3
+2025-08-23T18:08:45,218.311,CW22,table_released,table=3
+2025-08-23T18:08:45,218.311,KPI,snapshot,served=22 active=2 backlog=3 avg_seated_wait=6.73 avg_backlog_wait=10.31
+2025-08-23T18:08:45,218.311,CW25,table_assigned,table=3 total_wait_until_seated=18.311min
+2025-08-23T18:08:45,218.311,CW25,walk_to_table_begin,"table=3 to=(13.0, 9.0)"
+2025-08-23T18:08:45,218.311,CW25,move_theta,"segments=1 path_len=6.403m dur=0.059min start=(16.923076923076923, 4.492307692307692) goal=(13.0, 9.0)"
+2025-08-23T18:08:45,218.370,CW25,seated,table=3 leg_time=0.059min
+2025-08-23T18:08:45,218.370,CW25,request_waiter,table=3
+2025-08-23T18:08:45,218.370,CW25,waiter_acquired,waiter=W0 table=3
+2025-08-23T18:08:45,218.370,W0,dispatch_to_table,"table=3 target_xy=(13.0, 9.0)"
+2025-08-23T18:08:45,218.370,0,move_theta,"segments=1 path_len=8.062m dur=0.112min start=(17.138461538461538, 1.8153846153846154) goal=(13.0, 9.0)"
+2025-08-23T18:08:45,218.411,CW22,despawn,
+2025-08-23T18:08:45,218.482,W0,arrived_table,table=3 travel_time=0.112min
+2025-08-23T18:08:45,218.482,W0,service_start,table=3 svc_draw=2.019min
+2025-08-23T18:08:45,220.502,W0,service_end,table=3
+2025-08-23T18:08:45,220.502,W0,return_kitchen_begin,from_table=3
+2025-08-23T18:08:45,220.502,0,move_theta,"segments=2 path_len=8.293m dur=0.115min start=(13.0, 9.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:45,220.617,W0,return_kitchen_end,from_table=3 travel_time=0.116min
+2025-08-23T18:08:45,220.617,W0,available,ready_for_next_task
+2025-08-23T18:08:45,220.617,CW25,dine_start,dwell_draw=13.616min
+2025-08-23T18:08:45,224.000,GEN,arrival_emit,id=CW28 group=window
+2025-08-23T18:08:45,224.000,CW28,arrival,"group=window at_entry=11.88,2.12"
+2025-08-23T18:08:45,224.000,GEN,interarrival_fixed,group=window interval_min=8.000
+2025-08-23T18:08:45,224.000,CW28,walk_to_reception_begin,"from=entry to=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:45,224.000,CW28,move_theta,"segments=2 path_len=4.104m dur=0.038min start=(11.876923076923077, 2.123076923076923) goal=(14.923076923076923, 4.492307692307692)"
+2025-08-23T18:08:45,224.038,CW28,at_reception,leg_time=0.038min
+2025-08-23T18:08:45,224.038,CW28,waiting_for_table,group=window
+2025-08-23T18:08:45,227.536,CW24,dine_end,table=2
+2025-08-23T18:08:45,227.536,CW24,leaving_table,table=2
+2025-08-23T18:08:45,227.536,CW24,table_released,table=2
+2025-08-23T18:08:45,227.536,KPI,snapshot,served=23 active=2 backlog=3 avg_seated_wait=7.19 avg_backlog_wait=11.54
+2025-08-23T18:08:45,227.536,CW26,table_assigned,table=2 total_wait_until_seated=19.536min
+2025-08-23T18:08:45,227.536,CW26,walk_to_table_begin,"table=2 to=(7.0, 12.0)"
+2025-08-23T18:08:45,227.536,CW26,move_theta,"segments=1 path_len=12.806m dur=0.119min start=(16.923076923076923, 4.492307692307692) goal=(7.0, 12.0)"
+2025-08-23T18:08:45,227.636,CW24,despawn,
+2025-08-23T18:08:45,227.655,CW26,seated,table=2 leg_time=0.119min
+2025-08-23T18:08:45,227.655,CW26,request_waiter,table=2
+2025-08-23T18:08:45,227.655,CW26,waiter_acquired,waiter=W0 table=2
+2025-08-23T18:08:45,227.655,W0,dispatch_to_table,"table=2 target_xy=(7.0, 12.0)"
+2025-08-23T18:08:45,227.655,0,move_theta,"segments=1 path_len=14.142m dur=0.196min start=(17.138461538461538, 1.8153846153846154) goal=(7.0, 12.0)"
+2025-08-23T18:08:45,227.852,W0,arrived_table,table=2 travel_time=0.197min
+2025-08-23T18:08:45,227.852,W0,service_start,table=2 svc_draw=0.925min
+2025-08-23T18:08:45,228.776,W0,service_end,table=2
+2025-08-23T18:08:45,228.776,W0,return_kitchen_begin,from_table=2
+2025-08-23T18:08:45,228.776,0,move_theta,"segments=2 path_len=14.373m dur=0.200min start=(7.0, 12.0) goal=(17.138461538461538, 1.8153846153846154)"
+2025-08-23T18:08:45,228.976,W0,return_kitchen_end,from_table=2 travel_time=0.200min
+2025-08-23T18:08:45,228.976,W0,available,ready_for_next_task
+2025-08-23T18:08:45,228.976,CW26,dine_start,dwell_draw=7.053min
